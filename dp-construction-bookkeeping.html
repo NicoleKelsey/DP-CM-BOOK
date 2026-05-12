@@ -11,16 +11,15 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
   import { getFirestore, collection, doc, addDoc, setDoc, getDoc, getDocs, updateDoc, deleteDoc, onSnapshot, query, orderBy } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
-  // ─── FIREBASE CONFIG — Replace with your own ───────────────────────────────
   const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyC_IQIjPW2d6h7uhxpsWRUvqbcRguszrsM",
+    authDomain: "dp-cm-book.firebaseapp.com",
+    projectId: "dp-cm-book",
+    storageBucket: "dp-cm-book.firebasestorage.app",
+    messagingSenderId: "814565359527",
+    appId: "1:814565359527:web:afc3d64593fc21fda84082",
+    measurementId: "G-9C2YTCHR3R"
   };
-  // ────────────────────────────────────────────────────────────────────────────
 
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
@@ -614,9 +613,6 @@
 <!-- ══════════════════════════════════════════════════════ PROJECTS VIEW -->
 <div class="view active" id="view-projects">
   <div class="main-wrap">
-    <div id="config-notice">
-      ⚙️ <strong>Setup required:</strong> Open this file, find the Firebase config section near the top, and replace the placeholder values with your actual Firebase credentials. <a href="https://console.firebase.google.com/" target="_blank" style="color:var(--orange);font-weight:600;">Get them here →</a>
-    </div>
 
     <div class="section-header">
       <div>
